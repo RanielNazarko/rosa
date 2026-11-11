@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre Etnias — Memória, diversidade e conhecimento</title>
+  <meta name="description" content="Protótipo web educativo do Colégio Estadual Presidente Kennedy sobre protagonismo negro e indígena, cultura, conhecimento e letramento racial.">
+  <meta name="theme-color" content="#171110">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="image" href="assets/personalidades/mulher-negra-sec-xix.jpg">
+  <link rel="preload" as="image" href="assets/personalidades/machado-de-assis.jpg">
+  <noscript>
+    <style>.entrada{display:none!important}.pagina{opacity:1!important;transform:none!important}</style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ==========================================================
+       TELA DE ENTRADA — "abrir o arquivo"
+       Camadas: painéis (fundo) < conteúdo < grão de papel
+       ========================================================== -->
+  <div class="entrada" id="entrada" role="dialog" aria-modal="true" aria-label="Sobre Etnias — tela de entrada" aria-busy="true">
+
+    <div class="entrada__painel entrada__painel--esq" aria-hidden="true"></div>
+    <div class="entrada__painel entrada__painel--dir" aria-hidden="true"></div>
+
+    <!-- ETAPA 1 · o fólio se abre em duas folhas -->
+    <div class="folio" id="folio" aria-hidden="true">
+      <div class="folio__cena">
+        <div class="folio__volume">
+
+          <!-- Página direita: aparece quando a capa vira -->
+          <div class="folio__pagina folio__pagina--dir">
+            <figure class="prancha">
+              <div class="prancha__moldura">
+                <img class="prancha__img" src="assets/personalidades/machado-de-assis.jpg"
+                     width="492" height="624" alt="" decoding="async">
+                <span class="prancha__tinta" aria-hidden="true"></span>
+              </div>
+              <figcaption class="prancha__legenda">
+                <span class="prancha__nome">Machado de Assis</span>
+                <span class="prancha__nota">Escritor · 1839–1908</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- Segunda folha: a guarda -->
+          <div class="folio__folha folio__folha--guarda">
+            <div class="folio__face folio__face--frente">
+              <span class="guarda__marca">Sobre Etnias</span>
+              <span class="guarda__filete" aria-hidden="true"></span>
+              <span class="guarda__lema">Memória · Diversidade · Conhecimento</span>
+            </div>
+            <div class="folio__face folio__face--verso">
+              <figure class="prancha">
+                <div class="prancha__moldura">
+                  <img class="prancha__img" src="assets/personalidades/mulher-negra-sec-xix.jpg"
+                       width="358" height="558" alt="" decoding="async">
+                  <span class="prancha__tinta" aria-hidden="true"></span>
+                </div>
+                <figcaption class="prancha__legenda">
+                  <span class="prancha__nome">Resistência</span>
+                  <span class="prancha__nota">Mulher negra · séc. XIX</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Primeira folha: a capa -->
+          <div class="folio__folha folio__folha--capa">
+            <div class="folio__face folio__face--frente">
+              <span class="capa__emblema" aria-hidden="true">
+                <svg viewBox="0 0 48 48" focusable="false">
+                  <path d="M7 41V22.5a17 17 0 0 1 34 0V41" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <path d="M13 41h22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                  <circle cx="17.5" cy="30.5" r="1.7" fill="currentColor"/>
+                  <circle cx="24" cy="26" r="2.4" fill="currentColor"/>
+                  <circle cx="30.5" cy="30.5" r="1.7" fill="currentColor"/>
+                </svg>
+              </span>
+              <span class="capa__titulo">Sobre<em>Etnias</em></span>
+              <span class="capa__filete" aria-hidden="true"></span>
+              <span class="capa__selo">Acervo educativo · ERER 2026</span>
+            </div>
+            <div class="folio__face folio__face--verso"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="entrada__conteudo">
+
+      <p class="entrada__selo">
+        <span>Colégio Estadual Presidente Kennedy</span>
+        <span class="entrada__selo-sep" aria-hidden="true">·</span>
+        <span>ERER&nbsp;2026</span>
+      </p>
+
+      <div class="marca">
+        <span class="marca__anel" aria-hidden="true"></span>
+
+        <p class="marca__titulo" aria-hidden="true">
+          <span class="marca__linha">
+            <span class="letra" style="--i:0">S</span><span class="letra" style="--i:1">o</span><span class="letra" style="--i:2">b</span><span class="letra" style="--i:3">r</span><span class="letra" style="--i:4">e</span>
+          </span>
+          <span class="marca__linha marca__linha--destaque">
+            <span class="letra" style="--i:5">E</span><span class="letra" style="--i:6">t</span><span class="letra" style="--i:7">n</span><span class="letra" style="--i:8">i</span><span class="letra" style="--i:9">a</span><span class="letra" style="--i:10">s</span>
+          </span>
+        </p>
+
+        <span class="marca__filete" aria-hidden="true"></span>
+        <p class="marca__lema">Memória&nbsp;·&nbsp;Diversidade&nbsp;·&nbsp;Conhecimento</p>
+      </div>
+
+      <div class="palco">
+
+        <figure class="retrato retrato--esq" style="--dz:1.15">
+          <div class="retrato__quadro">
+            <img
+              class="retrato__img"
+              src="assets/personalidades/mulher-negra-sec-xix.jpg"
+              width="358" height="558"
+              alt="Retrato de estúdio de uma mulher negra não identificada, do século XIX.">
+            <span class="retrato__tinta" aria-hidden="true"></span>
+          </div>
+          <figcaption class="retrato__legenda">
+            <span class="retrato__nome">Resistência</span>
+            <span class="retrato__detalhe">Mulher negra · séc. XIX</span>
+          </figcaption>
+        </figure>
+
+        <figure class="retrato retrato--dir" style="--dz:.55">
+          <div class="retrato__quadro">
+            <img
+              class="retrato__img"
+              src="assets/personalidades/machado-de-assis.jpg"
+              width="492" height="624"
+              alt="Retrato do escritor Machado de Assis, de óculos e bigode, em traje formal.">
+            <span class="retrato__tinta" aria-hidden="true"></span>
+          </div>
+          <figcaption class="retrato__legenda">
+            <span class="retrato__nome">Machado de Assis</span>
+            <span class="retrato__detalhe">Escritor · 1839–1908</span>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="entrada__acoes">
+        <button class="botao" id="btn-entrar" type="button">
+          <span class="botao__texto">Explorar o acervo</span>
+          <svg class="botao__seta" width="22" height="10" viewBox="0 0 22 10" fill="none" aria-hidden="true" focusable="false">
+            <path d="M0 5h20M16 1l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="pular" id="btn-pular" type="button">Pular introdução</button>
+      </div>
+
+    </div>
+
+    <div class="entrada__grao" aria-hidden="true"></div>
+  </div>
+
+  <!-- ==========================================================
+       PÁGINA
+       ========================================================== -->
+  <div class="pagina" id="pagina">
+
+    <header class="cabecalho">
+      <div class="assinatura">
+        <span class="assinatura__simbolo" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="46" height="46" role="presentation" focusable="false">
+            <path d="M7 41V22.5a17 17 0 0 1 34 0V41" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+            <path d="M13 41h22" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/>
+            <circle cx="17.5" cy="30.5" r="2" fill="currentColor"/>
+            <circle cx="24" cy="26" r="2.8" fill="currentColor"/>
+            <circle cx="30.5" cy="30.5" r="2" fill="currentColor"/>
+          </svg>
+        </span>
+        <div class="assinatura__texto">
+          <h1 class="assinatura__nome">Sobre Etnias</h1>
+          <p class="assinatura__descritor">Acervo educativo · ERER</p>
+        </div>
+      </div>
+      <p class="cabecalho__meta">Colégio Estadual Presidente Kennedy<span class="cabecalho__ano">2026</span></p>
+    </header>
+<main id="conteudo">
+
+      <section class="heroi" id="inicio" aria-labelledby="titulo-inicio">
+        <p class="rotulo">Início</p>
+
+        <h2 class="heroi__titulo" id="titulo-inicio" tabindex="-1">
+          Memória, diversidade e conhecimento em <em>diálogo</em>
+        </h2>
+
+        <p class="heroi__texto">
+          O Sobre Etnias reúne trajetórias, saberes e conceitos das relações étnico-raciais
+          em um acervo digital feito para consultar, aprender e revisitar. Aqui, o
+          protagonismo negro e indígena está no centro da narrativa — com fontes
+          identificadas, linguagem acessível e respeito à diversidade de cada povo e
+          comunidade.
+        </p>
+
+        <ul class="indice" aria-label="Seções do acervo">
+          <li class="indice__item"><span class="indice__numero" aria-hidden="true">01</span><a class="indice__nome" href="protagonismo.html">Protagonismo e História</a><span class="indice__status">explorar</span></li>
+          <li class="indice__item"><span class="indice__numero" aria-hidden="true">02</span><a class="indice__nome" href="cultura.html">Cultura e Conhecimento</a><span class="indice__status">explorar</span></li>
+          <li class="indice__item"><span class="indice__numero" aria-hidden="true">03</span><a class="indice__nome" href="glossario.html">Aprendizado · glossário</a><span class="indice__status">pesquisar</span></li>
+          <li class="indice__item"><span class="indice__numero" aria-hidden="true">04</span><a class="indice__nome" href="quiz.html">Quiz</a><span class="indice__status">participar</span></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="rodape">
+      <div class="rodape__bloco">
+        <p class="rodape__titulo">Realização</p>
+        <p class="rodape__texto">
+          Projeto interdisciplinar de Inovação Tecnológica e Empreendedorismo.<br>
+          Colégio Estadual Presidente Kennedy · 2º ano — Técnico em Desenvolvimento de Sistemas.
+        </p>
+      </div>
+      <div class="rodape__bloco">
+        <p class="rodape__titulo">Desenvolvedores</p>
+        <p class="rodape__texto">[nome 1] · [nome 2] · [nome 3]</p>
+      </div>
+      <div class="rodape__bloco">
+        <p class="rodape__titulo">Créditos de imagens</p>
+        <p class="rodape__texto">
+          Retratos de acervo histórico. Origem e autoria em verificação.
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
